@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.body{
+    
+    width: 100%;
+
+    background: #000000;
+    background: radial-gradient(at center bottom, #3705ddb5, #330377, #0C012F);
+    
+    
+}
+.nav{
+    width: 95%;
+    align-self: center;
+    justify-self: center;
+    position: sticky;
+    top: 3%;
+    height: 75px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.31);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.hero{
+    width: 100%;
+    height: 760px;
+}
+.banner{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+.logo img{
+    width: 150px;
+    height: 125px;
+    margin-left: 22px;
+    
+    
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(231, 225, 241);
+    margin-left: 32px;
+    font-size: 22px;
+    
+    
+
+
+}
+.nav .signup button{
+    background-color: rgb(0, 51, 255);
+    width: 70px;
+    height: 32px;
+    margin-right: 12px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    font-size: 16px;
+    color: white;
+    
+}
+.profile{
+    width: 44px;
+    height: 44px;
+    border: rgb(0, 234, 255) solid 2px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    margin-right: 12px;
+    margin-left: 12px;
+}
+.signup{
+    display: flex;
+    align-items: center;
+}
