@@ -7,11 +7,9 @@
 .body{
     
     width: 100%;
-    height: 110vh;
-
-    background: #000000;
-   
      background: radial-gradient(at center bottom, #3705ddb5, #330377, #0C012F);
+
+   
     
 }
 .nav{
@@ -38,12 +36,15 @@
 .hero{
     width: 100%;
     height: 90vh;
-     background: radial-gradient(at center bottom, #3705ddb5, #330377, #0C012F);
+    /* background: radial-gradient(at center bottom, #3705ddb5, #330377, #0C012F); */
 }
 .banner{
     width: 100%;
     height: 10vh;
     background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .logo img{
     width: 150px;
@@ -61,6 +62,9 @@
     
 
 
+}
+.menu{
+    margin-right: 16px;
 }
 .nav .signup button{
     background-color: rgb(0, 51, 255);
@@ -85,6 +89,86 @@
 .signup{
     display: flex;
     align-items: center;
+}
+
+.wrapper{
+    width: 90%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 60px;
+
+    /* background-color: red; */
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1) 20%,
+        rgba(0, 0, 0, 1) 80%,
+        rgba(0, 0, 0, 0)
+    );
+}
+
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+.item {
+  width: 200px;
+  height: 50px;
+  /* background-color: rgb(255, 255, 255); */
+  border-radius: 6px;
+  margin-top: 5px;
+  position: absolute;
+  left: max(calc(200px * 8), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+.item img{
+    height: 110px;
+    width: 150px;
+
+    
 }
 
 @media  screen and (max-width : 880px) {
@@ -127,5 +211,6 @@
        height: 32px;
       
     }
+
 
 }
