@@ -1,18 +1,19 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
 }
 
-.body{
-    
-    width: 100%;
-     background: radial-gradient(at center bottom, #3705ddb5, #330377, #0C012F);
+.body {
 
-   
-    
+    width: 100%;
+    background: radial-gradient(at center bottom, #3705ddb5, #330377, #0C012F);
+
+
+
 }
-.nav{
+
+.nav {
     width: 95%;
     align-self: center;
     justify-self: center;
@@ -27,18 +28,25 @@
     border: 1px solid rgba(255, 255, 255, 0.31);
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     transition: transform 2s ease-in;
+    z-index: 200;
 }
-.nav2{
+
+.nav2 {
     display: none;
 }
-.hero{
+
+.hero {
     width: 100%;
     height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
     /* background: radial-gradient(at center bottom, #3705ddb5, #330377, #0C012F); */
 }
-.banner{
+
+.banner {
     width: 100%;
     height: 10vh;
     background-color: black;
@@ -46,27 +54,31 @@
     align-items: center;
     justify-content: center;
 }
-.logo img{
+
+.logo img {
     width: 150px;
     height: 125px;
     margin-left: 22px;
-    
-    
+
+
 }
-.menu a{
+
+.menu a {
     text-decoration: none;
     color: rgb(231, 225, 241);
     margin-left: 32px;
     font-size: 22px;
-    
-    
+
+
 
 
 }
-.menu{
+
+.menu {
     margin-right: 16px;
 }
-.nav .signup button{
+
+.nav .signup button {
     background-color: rgb(0, 51, 255);
     width: 70px;
     height: 32px;
@@ -75,9 +87,10 @@
     border-radius: 12px;
     font-size: 16px;
     color: white;
-    
+
 }
-.profile{
+
+.profile {
     width: 44px;
     height: 44px;
     border: rgb(0, 234, 255) solid 2px;
@@ -86,96 +99,233 @@
     margin-right: 12px;
     margin-left: 12px;
 }
-.signup{
+
+.signup {
     display: flex;
     align-items: center;
 }
 
-.wrapper{
+.wrapper {
     width: 90%;
     max-width: 1536px;
     margin-inline: auto;
     position: relative;
     height: 60px;
+    z-index: 12;
 
     /* background-color: red; */
     overflow: hidden;
-    mask-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 1) 20%,
-        rgba(0, 0, 0, 1) 80%,
-        rgba(0, 0, 0, 0)
-    );
-}
-
-
-@keyframes scrollLeft {
-  to {
-    left: -200px;
-  }
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0));
 }
 
 .item {
-  width: 200px;
-  height: 50px;
-  /* background-color: rgb(255, 255, 255); */
-  border-radius: 6px;
-  margin-top: 5px;
-  position: absolute;
-  left: max(calc(200px * 8), 100%);
-  animation-name: scrollLeft;
-  animation-duration: 30s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 200px;
+    height: 50px;
+    /* background-color: rgb(255, 255, 255); */
+    border-radius: 6px;
+    margin-top: 5px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
 }
 
 .item1 {
-  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
 }
 
 .item2 {
-  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
 }
 
 .item3 {
-  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
 }
 
 .item4 {
-  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
 }
 
 .item5 {
-  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
 }
 
 .item6 {
-  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
 }
 
 .item7 {
-  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
 }
 
 .item8 {
-  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
-.item img{
+
+.item img {
     height: 110px;
     width: 150px;
 
-    
+
 }
 
-@media  screen and (max-width : 880px) {
-    .nav{
+
+.orbit_animation {
+    justify-items: center;
+    padding: 35px;
+
+    /* background-color: red; */
+    width: 850px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.circle {
+    height: 750px;
+    width: 750px;
+    /* background-color: red; */
+    border: 2px rgb(0, 0, 0) solid;
+    border-radius: 50%;
+    animation-name: orbit;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;
+
+
+}
+
+@keyframes orbit {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+
+}
+
+.component {
+    width: 54px;
+    height: 54px;
+    background-color: rgb(157, 255, 0);
+    border-radius: 50%;
+    position: absolute;
+    animation-name: orbit;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.component img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+
+
+
+}
+
+
+
+.object {
+    top: 20%;
+    left: 5%;
+    background-color: red;
+}
+
+.object2 {
+    top: -1%;
+    left: 60%;
+}
+
+.object3 {
+    top: 18%;
+    left: 88%;
+
+}
+
+.object4 {
+    top: 0%;
+    right: 66%;
+}
+
+.object5 {
+    bottom: 20%;
+    left: 5%;
+}
+
+.object6 {
+
+    bottom: -1%;
+    left: 60%;
+}
+
+.object7 {
+    bottom: 18%;
+    left: 88%
+}
+
+.object8 {
+
+    bottom: 0%;
+    right: 66%;
+}
+
+.object9 {
+
+    bottom: 45%;
+    right: -3%;
+}
+
+.object10 {
+    bottom: 45%;
+    left: -3%;
+}
+
+.hero2 {
+    height: 700px;
+    width: 100%;
+    background-color: black;
+    z-index: 10;
+}
+
+
+
+
+
+
+@media screen and (max-width : 880px) {
+    .nav {
         display: none;
     }
-    .nav2{
+
+    .nav2 {
         display: flex;
         position: sticky;
         top: 3%;
@@ -191,26 +341,125 @@
         border: 1px solid rgba(255, 255, 255, 0.31);
         display: flex;
         align-items: center;
-        justify-content:space-between;
+        justify-content: space-between;
         transition: transform 2s ease-in;
+        z-index: 200;
     }
-    .nav2 .logo img{
+
+    .nav2 .logo img {
         height: 110px;
         width: 80%;
         align-self: center;
-        
+
     }
-    
-    .bar img{
+
+    .bar img {
         width: 42px;
         height: 32px;
         margin-left: 12px;
     }
-    .profile{
-       width: 35px; 
-       height: 32px;
-      
+
+    .hero {
+        height: 70vh;
+    }
+
+    .profile {
+        width: 35px;
+        height: 32px;
+
+    }
+
+    .circle {
+        height: 480px;
+        width: 480px;
+
+    }
+
+    .orbit_animation {
+        height: 280px;
+        width: 800px;
+    }
+
+    .object {
+        top: 20%;
+        left: 1%;
+        background-color: red;
+    }
+
+    .object2 {
+        top: -2%;
+        left: 63%;
+    }
+
+    .object3 {
+        top: 19%;
+        left: 88%;
+
+    }
+
+    .object4 {
+        top: -2%;
+        right: 63%;
+    }
+
+    .object5 {
+        bottom: 20%;
+        left: 1%;
+    }
+
+    .object6 {
+
+        bottom: -2%;
+        left: 63%;
+    }
+
+    .object7 {
+        bottom: 19%;
+        left: 88%
+    }
+
+    .object8 {
+
+        bottom: -2%;
+        right: 63%;
+    }
+
+    .object9 {
+
+        bottom: 45%;
+        right: -6%;
+    }
+
+    .object10 {
+        bottom: 45%;
+        left: -6%;
     }
 
 
+}
+@media screen and (max-width : 450px) {
+    .hero{
+        height: 50vh;
+    }
+    .circle {
+        height: 280px;
+        width: 280px;
+        border-color: rgb(0, 0, 0);
+
+    }
+
+    .orbit_animation {
+        height: 180px;
+        width: 800px;
+    }
+    .component{
+        width: 32px;
+        height: 32px;
+    }
+    .component img{
+        width: 28px;
+        height: 28px;
+    }
+    
+    
 }
