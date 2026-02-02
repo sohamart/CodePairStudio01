@@ -7,8 +7,7 @@
 .body {
 
     width: 100%;
-    background: radial-gradient(at center bottom, #3705ddb5, #330377, #0C012F);
-
+    background: radial-gradient(at center bottom, #0004ff, #000000);
 
 
 }
@@ -39,10 +38,17 @@
 
 .hero {
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: end;
+    transition: ease-in 0.3s ;
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 1, 1) 30%,
+            rgba(0, 0, 1, 1) 70%,
+            rgba(0, 0, 0, 0));
     /* background: radial-gradient(at center bottom, #3705ddb5, #330377, #0C012F); */
 }
 
@@ -199,7 +205,7 @@
     height: 750px;
     width: 750px;
     /* background-color: red; */
-    border: 2px rgb(0, 0, 0) solid;
+    border: 2px rgba(255, 255, 255, 0.479) solid;
     border-radius: 50%;
     animation-name: orbit;
     animation-duration: 30s;
@@ -224,7 +230,7 @@
 .component {
     width: 54px;
     height: 54px;
-    background-color: rgb(157, 255, 0);
+    background-color: rgb(255, 225, 0);
     border-radius: 50%;
     position: absolute;
     animation-name: orbit;
@@ -262,50 +268,60 @@
 .object2 {
     top: -1%;
     left: 60%;
+    background-color: rgb(17, 0, 255);
 }
 
 .object3 {
     top: 18%;
     left: 88%;
+    background-color: rgb(0, 0, 0);
 
 }
 
 .object4 {
     top: 0%;
     right: 66%;
+    background-color: rgb(255, 251, 0);
 }
 
 .object5 {
     bottom: 20%;
     left: 5%;
+    background-color: red;
 }
 
 .object6 {
 
     bottom: -1%;
     left: 60%;
+    background-color: rgb(0, 0, 255);
 }
 
 .object7 {
     bottom: 18%;
-    left: 88%
+    left: 88%;
+    background-color: rgb(0, 174, 255);
+    
 }
 
 .object8 {
 
     bottom: 0%;
     right: 66%;
+    background-color: rgb(144, 0, 255);
 }
 
 .object9 {
 
     bottom: 45%;
     right: -3%;
+    background-color: rgb(11, 206, 4);
 }
 
 .object10 {
     bottom: 45%;
     left: -3%;
+    background-color: rgb(0, 81, 255);
 }
 
 .hero2 {
@@ -315,10 +331,126 @@
     z-index: 10;
 }
 
+.hero_text{
+    position: absolute;
+    bottom: 52%;
+    /* background-color: red; */
+}
+.hero_text h1{
+    font-size: 9vw;
+    /* background-color: #330377; */
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    font-style: normal;
+    color: white;
+    white-space: nowrap;
+    /* transition: ease-in 0.3s ; */
+}
+.hero-descrip{
+    position: absolute;
+    top: 45%;
+    
+    overflow: hidden;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 10%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0));
+}
+.hero-descrip p{
+    font-size: 2vw;
+    margin-top: 22px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.812);
+}
 
+.hero_button{
+    position: absolute;
+    margin-bottom: 32px;
+}
+.hero_button button{
+    width: 160px;
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.392);
+    border-radius: 10px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family: "Bungee", sans-serif;
+    
+    transition: ease-in 0.3s ;
 
+}
+.hero_button button:hover{
+    background-color: rgb(255, 238, 0);
+    border: 3px solid rgb(255, 255, 255);
+    color: black;
 
-
+}
+@keyframes particle {
+    0%{
+        transform: translate(0%, 0%);
+    }
+    50%{
+        transform: translate(0%, 26px);
+    }
+    100%{
+        transform: translate(0%, 0%);
+    }
+    
+}
+.hero_particle{
+    position: absolute;
+    animation-name: particle;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+.hero_particle p{
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.particle1{
+    top: 18%;
+    left: 12%;
+    color: rgba(223, 113, 53, 0.966);
+}
+.particle2{
+    bottom : 38%;
+    left: 22%;
+    color: rgba(217, 223, 53, 0.708);
+}
+.particle3{
+    bottom : 22%;
+    left: 8%;
+    color: rgba(53, 223, 73, 0.838);
+}
+.particle4{
+    top: 18%;
+    right: 12%;
+    color: rgba(53, 186, 223, 0.886);
+}
+.particle5{
+    bottom : 38%;
+    right: 22%;
+    color: rgba(223, 53, 217, 0.89);
+}
+.particle6{
+    bottom : 22%;
+    right: 8%;
+    color: rgba(245, 245, 245, 0.873);
+}
+.particle7{
+    top : 22%;
+    
+    color: rgba(0, 255, 34, 0.929);
+}
 
 @media screen and (max-width : 880px) {
     .nav {
@@ -360,7 +492,7 @@
     }
 
     .hero {
-        height: 70vh;
+        height: 55vh;
     }
 
     .profile {
@@ -434,12 +566,66 @@
         bottom: 45%;
         left: -6%;
     }
+    .hero_text{
+        top: 22%;
+    }
+    .hero-descrip{
+        top: 32%;
+    }
+    .hero_button button{
+        width: 130px;
+        height: 42px;
+    }
+        .hero_particle p{
+        font-size: 12px;
+        font-family: 'Courier New', Courier, monospace;
+        
+    }
+    .particle1{
+        top: 13%;
+        left: 12%;
+        color: rgba(223, 113, 53, 0.966);
+        
+    }
+    .particle2{
+        bottom : 38%;
+        left: 22%;
+        color: rgba(217, 223, 53, 0.708);
+    }
+    .particle3{
+        bottom : 54%;
+        left: 8%;
+        color: rgba(53, 223, 73, 0.838);
+    }
+    .particle4{
+        top: 18%;
+        right: 12%;
+        color: rgba(53, 186, 223, 0.886);
+        
+    }
+    .particle5{
+        bottom : 58%;
+        right: 8%;
+        color: rgba(209, 223, 53, 0.89);
+        
+    }
+    .particle6{
+        bottom : 39%;
+        right: 19%;
+        color: rgba(245, 245, 245, 0.873);
+        
+    }
+    .particle7{
+        top : 22%;
+        display: none;
+        color: rgba(0, 255, 34, 0.929);
+    }
 
 
 }
 @media screen and (max-width : 450px) {
     .hero{
-        height: 50vh;
+        height: 40vh;
     }
     .circle {
         height: 280px;
@@ -460,6 +646,69 @@
         width: 28px;
         height: 28px;
     }
+    .hero_text{
+        top: 22%;
+    }
+    .hero_text h1{
+        font-size: 8vw;
+    }
+    .hero_text{
+        top: 17%;
+    }
+    .hero-descrip{
+        top: 19%;
     
+    }
+    .hero_button button{
+        width: 70px;
+        height: 32px;
+        font-size: 12px;
+    }
+    .hero_particle p{
+        font-size: 12px;
+        font-family: 'Courier New', Courier, monospace;
+        
+    }
+    .particle1{
+        top: 13%;
+        left: 12%;
+        color: rgba(223, 113, 53, 0.966);
+        
+    }
+    .particle2{
+        bottom : 38%;
+        left: 22%;
+        color: rgba(217, 223, 53, 0.708);
+        display: none;
+    }
+    .particle3{
+        bottom : 54%;
+        left: 8%;
+        color: rgba(53, 223, 73, 0.838);
+    }
+    .particle4{
+        top: 18%;
+        right: 12%;
+        color: rgba(53, 186, 223, 0.886);
+        
+    }
+    .particle5{
+        bottom : 58%;
+        right: 8%;
+        color: rgba(209, 223, 53, 0.89);
+        
+    }
+    .particle6{
+        bottom : 22%;
+        right: 8%;
+        color: rgba(245, 245, 245, 0.873);
+        display: none;
+    }
+    .particle7{
+        top : 22%;
+        display: none;
+        color: rgba(0, 255, 34, 0.929);
+    }
+   
     
 }
