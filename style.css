@@ -630,7 +630,7 @@
     .circle {
         height: 280px;
         width: 280px;
-        border-color: rgb(0, 0, 0);
+        border-color: rgba(255, 255, 255, 0.479);
 
     }
 
@@ -712,3 +712,4 @@
    
     
 }
+
