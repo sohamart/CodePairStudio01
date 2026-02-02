@@ -9,7 +9,6 @@
     width: 100%;
     background: radial-gradient(at center bottom, #0004ff, #000000);
 
-
 }
 
 .nav {
@@ -37,8 +36,9 @@
 }
 
 .hero {
+    position: relative;
     width: 100%;
-    height: 80vh;
+    height: 580px;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -337,7 +337,7 @@
     /* background-color: red; */
 }
 .hero_text h1{
-    font-size: 9vw;
+    font-size: 8.5vw;
     /* background-color: #330377; */
     font-family: "Bungee", sans-serif;
     font-weight: 400;
@@ -492,7 +492,7 @@
     }
 
     .hero {
-        height: 55vh;
+        height: 355px;
     }
 
     .profile {
@@ -570,7 +570,7 @@
         top: 22%;
     }
     .hero-descrip{
-        top: 32%;
+        top: 39%;
     }
     .hero_button button{
         width: 130px;
@@ -625,12 +625,12 @@
 }
 @media screen and (max-width : 450px) {
     .hero{
-        height: 40vh;
+        height: 300px;
     }
     .circle {
         height: 280px;
         width: 280px;
-        border-color: rgba(255, 255, 255, 0.479);
+        border-color: rgba(255, 255, 255, 0.485);
 
     }
 
@@ -656,7 +656,7 @@
         top: 17%;
     }
     .hero-descrip{
-        top: 19%;
+        top: 25%;
     
     }
     .hero_button button{
@@ -670,7 +670,7 @@
         
     }
     .particle1{
-        top: 13%;
+        top: 10%;
         left: 12%;
         color: rgba(223, 113, 53, 0.966);
         
@@ -682,18 +682,18 @@
         display: none;
     }
     .particle3{
-        bottom : 54%;
+        bottom : 24%;
         left: 8%;
         color: rgba(53, 223, 73, 0.838);
     }
     .particle4{
-        top: 18%;
+        top: 24%;
         right: 12%;
         color: rgba(53, 186, 223, 0.886);
         
     }
     .particle5{
-        bottom : 58%;
+        bottom : 38%;
         right: 8%;
         color: rgba(209, 223, 53, 0.89);
         
@@ -712,4 +712,3 @@
    
     
 }
-
